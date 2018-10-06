@@ -9,7 +9,7 @@ pipeline {
                     ls -lah
                 '''
             }
-        },
+        }
         stage('Deploy') {
             steps {
                 timeout(time: 3, unit: 'MINUTES') {
